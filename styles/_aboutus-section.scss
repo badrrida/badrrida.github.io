@@ -1,0 +1,78 @@
+.about-us-section {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      width: 80%;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      width: 80%;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 120%;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media only screen and (min-width: 400px) {
+  .about-us-section {
+    div {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        width: 90%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 750px) {
+  .about-us-section {
+    div {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        width: 60%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about-us-section {
+    div {
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        width: 60%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .about-us-section {
+    div {
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        width: 60%;
+      }
+    }
+  }
+}

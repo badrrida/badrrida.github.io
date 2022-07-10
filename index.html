@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Haxia</title>
+  <link rel="stylesheet" href="styles/rest.css">
+  <!-- <link rel="stylesheet" href="styles/master.css"> -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- <link rel="stylesheet" href="styles/_portfolio-section.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/transition-style">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
+  <script src="js/script.js" charset="utf-8"></script>
+</head>
+<body>
+  <header>
+
+    <div class="nav-bar">
+      <a href="./"><img src="assets/black-logo.svg" alt="" class="black-logo"></a>
+      <div class="nav-container">
+        <ul id="nav-button">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+    <input style="display: none;" type="checkbox" class="navigation_checkbox" id="nav-toggle-1">
+    <input style="display: none;" type="checkbox" class="contact_checkbox" id="nav-toggle-2">
+    <input style="display: none;" type="checkbox" class="thanks_checkbox" id="nav-toggle-5">
+
+    <div id="menu_background" class="menu_background"></div>
+
+    <div class="nav-content-wrapper">
+      <div class="nav-center">
+        <a class="effect-shine" href="/">Home</a>
+        <a class="effect-shine" href="ourwork.html">Our Work</a>
+        <a class="effect-shine" href="technologies.html">Technologies</a>
+        <a class="effect-shine" href="contact-us.html">Contact Us</a>
+        <a class="effect-shine" href="about-us.html">About Us</a>
+      </div>
+
+    </div>
+
+    <div class="contact-content-wrapper">
+      <div class="contact-1">
+        Need our help? Shoot us a message.
+      </div>
+      <div class="contact-2">
+        We are always looking for new ideas and exciting projects. </div>
+
+      <div class="contact-form">
+
+        <input type="text" name="name" placeholder="Full Name" id="name" class="form__field">
+        <input type="text" name="email" placeholder="Email" id="email" class="form__field">
+        <input type="text" name="country" placeholder="Country" id="country" class="form__field">
+        <textarea name="message" placeholder="message" rows="1" cols="80" id="message" class="form__field form-message"></textarea>
+        <div class="button-con">
+          <button type="submit" name="button" id="form-button" class="form-button">Submit</button>
+        </div>
+      </div>
+
+      <div class="info-con">
+        <div class="info">
+          Or email us at
+          <a href="mailto:mail@haxia.co">mail@haxia.co</a>
+        </div>
+
+        <div class="info">
+          <a href="tel:+971 58 503 7261">Instagram</a>
+          -
+          <a href="tel:+971 58 503 7261">Twitter</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="thanks-massage" class="thanks-massage">
+
+      <div class="contact-1">
+        Thanks for your message, we will get back to you shortly.
+      </div>
+
+    </div>
+
+  </header>
+
+  <div id="slides">
+    <section class="section fp-auto-height">
+      <img src="assets/main-logo.svg" class="main-logo" alt="">
+
+      <div class="header-container">
+        <div class="">We Design</div>
+        <div class="">We Develop</div>
+      </div>
+
+      <div class="descrption-container">
+        <div class="">We build custom digital touchpoints, websites and Apps with a focus on customer experience - for greater reach and revenue.</div>
+      </div>
+
+      <div class="qoute-button" id="qoute-button">
+        Get A Free Quote
+      </div>
+
+      <div class="scrolldown-container">
+        <img src="assets/scroll-down.svg" class="" alt="">
+      </div>
+    </section>
+
+    <section class="section portfolio-section fp-auto-height">
+      <input style="display: none;" type="checkbox" class="portfolio_checkbox" id="nav-toggle-3">
+      <input style="display: none;" type="checkbox" class="portfolio_checkbox-2" id="nav-toggle-4">
+
+      <div transition-style="in:wipe:bottom-right" id="portfolio_background" class="portfolio_background"></div>
+      <div transition-style="in:wipe:bottom-right" id="portfolio_background-2" class="portfolio_background-2"></div>
+
+      <div id="portfolio-1" class="portfolio-content-wrapper">
+        <div>
+          <p>Mabel Alvarado</p>
+          <div class="">"If you are looking for quality work with the right expertise, Codista is the right company for you! Through excellent communication, the online store development was realized quickly and successfully."</div>
+          <img id="portfolio-image-1" src="assets/laptop-1.png" alt="">
+        </div>
+        <img src="assets/image-1.png" id="portfolio-design-image-1" alt="">
+      </div>
+
+      <div id="portfolio-2" class="portfolio-content-wrapper">
+        <div>
+          <p>Kamila Santos</p>
+          <div class="">"While working with Codista, they integrated our platform raisenow.com. We were very impressed by the team’s technical skills and high-quality work. Therefore, Codista has my full recommendation. Many thanks for that!"</div>
+          <img id="portfolio-image-2" src="assets/laptop-2.png" alt="">
+        </div>
+        <img src="assets/image-2.png" id="portfolio-design-image-2" alt="">
+      </div>
+
+      <div id="portfolio-3" class="portfolio-content-wrapper">
+        <div>
+          <p>Noa Coles</p>
+          <div class="">"We could not have hoped for a better partner in the development of CLEANVEST. Codista is a top-notch professional team packed with creative, dedicated people."</div>
+          <img id="portfolio-image-3" src="assets/laptop-3.png" alt="">
+        </div>
+        <img src="assets/image-3.png" id="portfolio-design-image-3" alt="">
+        <!-- <img id="portfolio-image-4" src="assets/image-4.png" alt=""> -->
+      </div>
+
+      <div id="portfolio-4" class="portfolio-content-wrapper">
+        <div>
+          <p>Fathima Ratliff</p>
+          <div class="">"Codista's work in the development of our onboard customer experience web app was exemplary. Without their professional expertise, the end result would surely not have been the same."</div>
+          <img id="portfolio-image-5" src="assets/laptop-4.png" alt="">
+        </div>
+        <img src="assets/image-5.png" id="portfolio-design-image-4" alt="">
+      </div>
+
+      <h6>Our Work</h6>
+      <p>We can’t wait to work with you! <br>Check out some of the success stories from our projects</p>
+
+      <div class="projects-grid">
+        <div class="portfolio-container">
+          <img src="assets/laptop-1.png" alt="">
+          <a id="portfolio-button-1" href="#">Veiw
+            <svg viewBox="0 0 70 36">
+              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </div>
+        <div class="portfolio-container">
+          <img src="assets/laptop-2.png" alt="">
+          <a id="portfolio-button-2" href="#">Veiw
+            <svg viewBox="0 0 70 36">
+              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </div>
+        <div class="portfolio-container">
+          <img src="assets/laptop-3.png" alt="">
+          <a id="portfolio-button-3" href="#">Veiw
+            <svg viewBox="0 0 70 36">
+              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </div>
+        <div class="portfolio-container">
+          <img src="assets/laptop-4.png" alt="">
+          <a id="portfolio-button-4" href="#">Veiw
+            <svg viewBox="0 0 70 36">
+              <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section fp-auto-height contactus-section">
+      <h4>Have A Project To Discuss?</h4>
+      <h3>We’re Ready! Let’s Talk</h3>
+
+      <div class="contact-button" id="contact-button">
+        Contact Us
+      </div>
+      <div class="contactus-copyright">
+        <p>©2022 Haxia</p>
+        <a href="privacy-policy.html">Privacy policy</a>
+      </div>
+    </section>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.js" integrity="sha512-Ql+BI+ZJBJ9b8dZ5FKuyCz42y0ZcG05muq5tHIfb0Qxe0TlEtGkYXV8Df7h6HbJolt6Rhz6gRMBLypwX6slbzw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <script src="js/animation.js" charset="utf-8"></script>
+</body>
+
+</html>

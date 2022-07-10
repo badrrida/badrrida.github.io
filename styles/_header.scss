@@ -1,0 +1,419 @@
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  .nav-bar {
+    height: 7vh;
+    padding-top: 20px;
+  }
+
+  .black-logo {
+    width: 1.63rem;
+    z-index: 2;
+    align-self: flex-start;
+    float: left;
+    margin-left: 30px;
+  }
+
+  .nav-container {
+    float: right;
+    margin-top: 12px;
+    margin-right: 40px;
+
+    ul {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 1.63rem;
+      height: 1.63rem;
+      cursor: pointer;
+      z-index: 4;
+
+      li {
+        list-style: none;
+        position: absolute;
+        left: 5%;
+        width: 90%;
+        height: 3px;
+        transition: 0.5s;
+        background: black;
+        transform: translateY(-50%) rotate(0);
+        opacity: 1;
+        transition: 1200ms;
+
+        &:nth-child(1) {
+          top: 20%;
+        }
+
+        &:nth-child(2) {
+          top: 50%;
+        }
+
+        &:nth-child(3) {
+          top: 80%;
+        }
+      }
+
+      &.active li:nth-child(1) {
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      &.active li:nth-child(2) {
+        opacity: 0;
+      }
+
+      &.active li:nth-child(3) {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+
+      &.active li {
+        background: white;
+        transition: 500ms;
+      }
+    }
+  }
+
+  .menu_background {
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background: #262423;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    transition: all 500ms cubic-bezier(0.86, 0, 0.07, 1);
+    visibility: hidden;
+  }
+
+  .navigation_checkbox {
+    &:checked~.menu_background {
+      display: block;
+      transform: scale(300);
+      visibility: visible;
+    }
+
+    &:checked~.qoute-button {
+      width: 50%;
+    }
+
+    &:checked~.nav-content-wrapper {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .contact_checkbox {
+    &:checked~.menu_background {
+      display: block;
+      transform: scale(300);
+      visibility: visible;
+    }
+  }
+
+  .thanks-massage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    opacity: 0;
+    width: 0;
+    visibility: hidden;
+    z-index: 200;
+    transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .thanks_checkbox {
+    &:checked~.thanks-massage {
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .nav-content-wrapper {
+    position: fixed;
+    visibility: hidden;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    text-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    .nav-center {
+      margin-top: 40%;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 32px;
+        font-weight: 800;
+        text-decoration: none;
+        padding: 4px;
+        cursor: pointer;
+
+        &.effect-shine {
+          &:hover {
+            -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .4) 30%, #000 50%, rgba(0, 0, 0, .4) 70%);
+            -webkit-mask-size: 200%;
+            animation: shine 2s infinite;
+          }
+        }
+        @-webkit-keyframes shine {
+          from {
+            -webkit-mask-position: 150%;
+          }
+
+          to {
+            -webkit-mask-position: -50%;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-content-wrapper {
+    position: fixed;
+    opacity: 0;
+    z-index: 5;
+    width: 0;
+    height: 100vh;
+    text-color: white;
+    visibility: hidden;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 800ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    .contact-1 {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .contact-2 {
+      font-size: 13px;
+      margin: 10px;
+      color: white;
+      width: 60vw;
+      text-align: center;
+    }
+
+    .contact-form {
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+
+      .form-button {
+        width: 6.5rem;
+        height: 2.25rem;
+        border-width: 0;
+        border-radius: 10px;
+        background: #FFFFFF;
+        cursor: pointer;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+        margin-top: 50px;
+
+        &:hover {
+          background: #95A09D;
+          color: white;
+        }
+      }
+
+      .form__field {
+        margin-bottom: 10px;
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #9b9b9b;
+        outline: 0;
+        font-size: 15px;
+        color: #fff;
+        padding: 2px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &:focus {
+          padding-bottom: 6px;
+          font-weight: 700;
+          border-width: 3px;
+          border-color: white;
+          border-image-slice: 1;
+        }
+      }
+
+      .form-message {
+        resize: none;
+        margin: 0;
+        height: 75px;
+      }
+    }
+
+    .info-con {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      font-family: 'Inter', sans-serif;
+      color: white;
+      font-size: 13px;
+
+      .info {
+        margin-top: 10px;
+        font-family: 'Inter', sans-serif;
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .contact_checkbox {
+    &:checked~.contact-content-wrapper {
+      width: 100vw;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+@media only screen and (min-width: 750px) {
+  header {
+    .black-logo {
+      width: 2rem;
+      z-index: 2;
+      align-self: flex-start;
+      float: left;
+      margin-left: 60px;
+      margin-top: 20px;
+    }
+
+    .nav-container {
+      float: right;
+      margin-top: 29px;
+      margin-right: 80px;
+
+      ul {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 1.94rem;
+        height: 1.94rem;
+        cursor: pointer;
+        z-index: 4;
+      }
+    }
+
+    .nav-content-wrapper {
+      .nav-center {
+        margin-top: 17%;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1400px) {
+  header {
+    .nav-content-wrapper {
+      .nav-center {
+        margin-top: 15%;
+
+        a {
+          font-size: 40px;
+        }
+      }
+    }
+
+    .contact-content-wrapper {
+      .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 1117px;
+        margin-top: 114px;
+        position: relative;
+        padding: 15px 0 0;
+        grid-column-gap: 20px;
+        grid-row-gap: 30px;
+
+        .form-button {
+          margin-top: 10px;
+        }
+
+        .form-message {
+          grid-column: 1 / 4;
+          height: 200px;
+        }
+
+        .button-con {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          grid-column: 1 / 4;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 2000px) {
+  header {
+    .navigation_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(400);
+      visibility: visible;
+    }
+
+    .contact_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(400);
+      visibility: visible;
+    }
+  }
+}
+@media only screen and (min-width: 3100px) {
+  header {
+    .navigation_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(450);
+      visibility: visible;
+    }
+
+    .contact_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(450);
+      visibility: visible;
+    }
+  }
+}
+@media only screen and (min-width: 3100px) {
+  header {
+    .navigation_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(850);
+      visibility: visible;
+    }
+
+    .contact_checkbox:checked~.menu_background {
+      display: block;
+      transform: scale(850);
+      visibility: visible;
+    }
+  }
+}
