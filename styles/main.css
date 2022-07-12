@@ -206,7 +206,8 @@ header .contact-content-wrapper .contact-form .form-button:hover {
   color: white;
 }
 header .contact-content-wrapper .contact-form .form__field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  height: 25px;
   font-family: inherit;
   width: 100%;
   border: 0;
@@ -345,6 +346,47 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
     visibility: visible;
   }
 }
+@media only screen and (min-width: 1280px) and (max-width: 1380px) and (min-height: 700px) and (max-height: 1024px) {
+  header .nav-content-wrapper .nav-center {
+    margin-top: 12%;
+  }
+  header .contact-content-wrapper .contact-1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+  header .contact-content-wrapper .contact-2 {
+    font-size: 11px;
+    margin: 10px;
+    color: white;
+    width: 60vw;
+    text-align: center;
+  }
+  header .contact-content-wrapper .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1117px;
+    margin-top: 60px;
+    position: relative;
+    padding: 15px 0 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+  header .contact-content-wrapper .contact-form .form-button {
+    margin-top: 10px;
+  }
+  header .contact-content-wrapper .contact-form .form-message {
+    grid-column: 1/4;
+    height: 200px;
+  }
+  header .contact-content-wrapper .contact-form .button-con {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column: 1/4;
+  }
+}
 .main-logo {
   width: 5rem;
   margin-top: 55%;
@@ -432,6 +474,14 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
   }
   .scrolldown-container {
     width: 150px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1380px) and (min-height: 700px) and (max-height: 1024px) {
+  .main-logo {
+    margin-top: 15%;
+  }
+  .scrolldown-container {
+    width: 8rem;
   }
 }
 .portfolio_background {
@@ -631,7 +681,7 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
 @media only screen and (min-width: 1400px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 0px;
+    margin-top: 0;
     grid-row-gap: 40px;
   }
   .projects-grid .portfolio-container img {
@@ -689,11 +739,34 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
   .projects-grid {
     grid-template-columns: 1fr 1fr 1fr;
     width: 75%;
-    margin-top: 0px;
+    margin-top: 0;
     grid-row-gap: 40px;
   }
   .projects-grid .portfolio-container img {
     width: 25rem;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1380px) and (min-height: 700px) and (max-height: 1024px) {
+  .portfolio-section h6 {
+    font-size: 16px;
+  }
+  .portfolio-section p {
+    font-size: 20px;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-1 {
+    width: 35%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-2 {
+    width: 25%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-3 {
+    width: 25%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-4 {
+    width: 25%;
+  }
+  .projects-grid .portfolio-container img {
+    width: 40%;
   }
 }
 .about-us-section {
@@ -815,6 +888,11 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
   }
   .contactus-section h3 {
     font-size: 48px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1380px) and (min-height: 700px) and (max-height: 1024px) {
+  .contactus-section h4 {
+    padding-top: 20%;
   }
 }
 .tech-page-container {
