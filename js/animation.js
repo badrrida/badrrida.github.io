@@ -1,5 +1,6 @@
 new fullpage('#slides', {
   autoScrolling: true,
+  anchors: ['main', 'portfolio', 'contact-us'],
   afterLoad: function(origin, destination, direction, trigger) {
     var origin = this;
     //using index
@@ -8,6 +9,7 @@ new fullpage('#slides', {
       $(".nav-container ul li").css('background', 'white');
       $(".black-logo").attr("src", "assets/white-logo.svg");
     } else {
+      console.log(origin);
       $(".nav-container ul li").css('background', '');
       $(".black-logo").attr("src", "assets/black-logo.svg");
     }

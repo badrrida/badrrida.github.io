@@ -45,7 +45,6 @@ $(window).ready(function() {
     }
 
     if ($("#nav-toggle-1").prop('checked') || $("#nav-toggle-2").prop('checked')) {
-      console.log('test')
       $("body").css('position', 'fixed');
     }
 
@@ -69,6 +68,26 @@ $(window).ready(function() {
     let status = $("#nav-toggle-2").prop('checked')
     $("#nav-toggle-2").prop('checked', !status);
     $("body").css('position', 'fixed');
+  })
+
+  $("#nav-contact-button").click(function() {
+    // alert(1);
+    // $("#nav-button").toggleClass('active');
+    // $(this).toggleClass('active');
+    let status = $("#nav-toggle-1").prop('checked')
+    $("#nav-toggle-1").prop('checked', !status);
+
+    let status1 = $("#nav-toggle-2").prop('checked')
+    $("#nav-toggle-2").prop('checked', !status1);
+
+    $("body").css('position', 'fixed');
+  })
+
+  $("#nav-portfolio-button").click(function() {
+    $("#nav-button").toggleClass('active');
+    let status = $("#nav-toggle-1").prop('checked')
+    $("#nav-toggle-1").prop('checked', !status);
+    // $("body").css('position', 'static');
   })
 
   $("#portfolio-button-1").click(function() {
