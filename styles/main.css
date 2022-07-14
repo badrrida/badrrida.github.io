@@ -817,6 +817,24 @@ header .contact_checkbox:checked ~ .contact-content-wrapper {
   .projects-grid .portfolio-container img {
     width: 35vh;
   }
+  .portfolio-content-wrapper div {
+    width: 70%;
+  }
+  .portfolio-content-wrapper div div {
+    width: 50%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-1 {
+    width: 30%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-2 {
+    width: 19%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-3 {
+    width: 19%;
+  }
+  .portfolio-content-wrapper #portfolio-design-image-4 {
+    width: 19%;
+  }
 }
 .about-us-section {
   text-align: center;
